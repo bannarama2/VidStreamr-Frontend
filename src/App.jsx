@@ -7,7 +7,7 @@ export default function VideoApp() {
 
   async function load() {
     // switch the localhost with your IP address so your REACT and .NET apps can work together
-    const response = await fetch("http://localhost/videos/");
+    const response = await fetch("http://localhost:5001/videos/");
     const data = await response.json();
 
     const updatedData = Object.entries(data).map(([name, path]) => (
@@ -44,7 +44,7 @@ export default function VideoApp() {
         <div className="flex flex-wrap space-x-24 justify-center mt-6" >
           {files.map(video => (
             <div className="flex p-2 bg-cyan-950 flex-col items-center rounded-xl mb-8" key={video.name}>
-              <img controls src={`https://placehold.co/250/099BC8/FFF/?text=${video.name}&font=playfair-display`}></img>
+              <img controls src={`https://placehold.co/300/099BC8/FFF/?text=${video.name}&font=playfair-display`}></img>
               <button onClick={() => { setSelected(video.name) }} className="p-4 mt-2 rounded-2xl w-[150px] bg-white">Play</button>
             </div>
           ))}
