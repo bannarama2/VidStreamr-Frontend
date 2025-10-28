@@ -25,11 +25,11 @@ export default function VideoApp() {
 
   return (
     <>
-      <div className="h-screen w-screen">
-        <nav className="bg-yellow-400 flex p-5 content-between">
+      <div className="h-screen w-screen bg-gray-900 overflow-y-auto">
+        <nav className="bg-gray-800 flex p-5 content-between">
           <a className="font-bold ml-2 text-2xl">
-            <span className="text-red-600">VID</span>
-            <span className="text-[#d32a8e]">STREAMR</span>
+            <span className="text-[#2b7fff]">VID</span>
+            <span className="text-[#c27aff]">STREAMR</span>
           </a>
         </nav>
 
